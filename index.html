@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color:#3e3e3e; 
+      }
+      .container{
+        height:100%;
+        width:100%;
+        position: relative;
+      }
+      .video-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      video{
+        width:700px; 
+        height:470px;
+      }
+
+      @media only screen and (max-width: 750px) {
+        video{
+          width: 100%;
+          height: auto;
+        }
+
+        .video-wrapper{
+          padding: 1rem;
+          left: unset;
+          transform: translate(0,-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-wrapper">
+        <video controls>
+          <source src="./EWRPE8358 (convert-video-online.com).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
